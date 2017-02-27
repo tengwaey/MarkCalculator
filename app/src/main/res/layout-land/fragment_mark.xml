@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/background2">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_sem_label"
+            android:textSize="20sp"
+            android:theme="@style/MyHintText"
+            android:paddingStart="25dp"
+            android:paddingTop="15dp"/>
+
+        <EditText
+            android:id="@+id/mark_sem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="13dp"
+            android:hint="@string/mark_sem_hint"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_subjectamt_label"
+            android:textSize="20sp"
+            android:theme="@style/MyHintText"
+            android:paddingStart="25dp"
+            android:paddingTop="20dp"/>
+
+        <EditText
+            android:id="@+id/mark_subjectamt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="13dp"
+            android:hint="@string/mark_subjectamt_hint"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_date_label"
+            android:textSize="20sp"
+            android:theme="@style/MyHintText"
+            android:paddingStart="25dp"
+            android:paddingTop="20dp"/>
+
+        <Button
+            android:id="@+id/mark_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_gpa_label"
+            android:textSize="20sp"
+            android:theme="@style/MyHintText"
+            android:paddingTop="100dp"/>
+
+        <TextView
+            android:id="@+id/mark_gpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="30sp"
+            android:hint="@string/mark_gpa_hint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/mark_date_added"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="90dp"
+            android:textStyle="italic"
+            tools:text="Date added"/>
+
+        <Button
+            android:id="@+id/mark_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="70dp"
+            android:text="@string/mark_proceed"/>
+
+    </LinearLayout>
+</LinearLayout>
